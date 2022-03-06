@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Bebas Neue';
-    src: url('../pacote-projeto-d010/fontes/BebasNeue-Regular.otf');
+    src: url('/pacote-projeto-d010/fontes/BebasNeue-Regular.otf');
 }
 
 @font-face {
     font-family: 'Android';
-    src: url('/desafio10/pacote-projeto-d010/fontes/IDroid.otf') format('opentype');
+    src: url('/pacote-projeto-d010/fontes/IDroid.otf') format('opentype');
     font-weight: normal;
 }
 
