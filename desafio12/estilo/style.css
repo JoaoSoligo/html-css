@@ -1,13 +1,26 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2? family= Passion+One & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Sriracha & display=swap');
+
+:root {
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --font2: 'Passion One', cursive;
+    --font3: 'Sriracha', cursive;
+}
+
+/*vw: largura da tela ou view port*/
+
 * {
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
 
 html, body {
     min-height: 100vh; /*Poderia ser por porcentagem*/
     background-color: darkgray;
+    font-family: var(--font1);
 }
 
 header {
@@ -19,6 +32,8 @@ header {
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps; /*também pode usar o text-transform: uppercase; */
+    font-family: var(--font2);
+    font-size: 7vw;
 }
 
 header > p {
@@ -41,6 +56,8 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 20px;
+    font-family: var(--font3);
+    font-size: 3vw;
 }
 
 section.normal {
@@ -54,7 +71,8 @@ section.imagem {
 }
 
 section.imagem > p {
-    width: 400px;
+    display: inline-block; /*Para ficar justificado a caixa*/
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.178);
 }
 
