@@ -12,6 +12,14 @@
 
         table {
             width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
         }
 
         th, td {
@@ -20,7 +28,7 @@
         }
 
         thead, tfoot {
-            background-color: gray;
+            background-color: rgb(53, 53, 53);
             color: white;
         }
 
@@ -40,10 +48,11 @@
             tfoot
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 75px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -67,7 +76,7 @@
                 <td>Paraná</td>
                 <td class="num">11 597 484</td>
             </tr>
-            <tr> 
+            <tr>
                 <td>Rio Grande do Sul</td>
                 <td class="num">11 466 630</td>
             </tr>
@@ -158,7 +167,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>213.000.000</strong></td>
             </tr>
         </tfoot>
