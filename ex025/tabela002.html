@@ -13,6 +13,13 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(53, 53, 53);
         }
 
         tbody tr:nth-child(odd) {
